@@ -60,6 +60,12 @@ body {
   object-position: center;
 }
 
+@media (max-width: 768px) {
+  .got-video {
+    object-position: 65% center;
+  }
+}
+
 /* ── Vignette ── */
 .got-vignette {
   position: absolute;
@@ -105,7 +111,7 @@ body {
 
 .got-nav-logo {
   font-family: 'Cinzel Decorative', serif;
-  font-size: 13px;
+  font-size: 18px;
   letter-spacing: 0.25em;
   color: var(--gold);
   text-transform: uppercase;
@@ -114,7 +120,7 @@ body {
 .got-nav-role {
   display: block;
   font-family: 'Cinzel', serif;
-  font-size: 8px;
+  font-size: 10px;
   letter-spacing: 0.35em;
   color: var(--ash);
   text-transform: uppercase;
@@ -246,7 +252,9 @@ body {
 
 .got-subtitle {
   font-family: 'Cinzel', serif;
-  font-size: 10px;
+  font-size: clamp(12px, 1.5vw, 15px);
+  font-weight: 700;
+  text-shadow: 0 0 12px rgba(201, 168, 76, 0.5);
   letter-spacing: 0.45em;
   color: var(--gold);
   text-transform: uppercase;
@@ -594,7 +602,8 @@ body {
   .got-sigil          { font-size: 20px; margin-bottom: 8px; }
   .got-divider        { margin-bottom: 10px; }
   .got-subtitle       { margin-bottom: 8px; }
-  .got-nav-role       { font-size: 7px; }
+  .got-nav-logo       { font-size: 16px; }
+  .got-nav-role       { font-size: 9px; }
 }
 
 @media (max-width: 480px) {

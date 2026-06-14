@@ -11,7 +11,7 @@ const CHAPTERS = [
     id: 'intro',
     progress: [0, 0.12],
     title: 'Shlok Jadhav',
-    subtitle: 'SOFTWARE ENGINEER',
+    subtitle: 'JAVA FULL STACK DEVELOPER',
     body: (
       <>
         <span className="highlight">Java Full Stack Developer</span> | <span className="highlight">Problem Solver</span> | Tech Enthusiast. Building <span className="highlight">scalable, secure, and innovative</span> web applications with modern technologies.
@@ -277,7 +277,7 @@ const Hero = () => {
       <div
         ref={containerRef}
         className="got-container"
-        style={{ height: `${window.innerHeight * 6 + window.innerHeight}px` }}
+        style={{ height: `${window.innerHeight * 6}px` }}
       >
         {/* ── Sticky viewport ── */}
         <div ref={stickyRef} className="got-sticky">
@@ -312,7 +312,7 @@ const Hero = () => {
           <nav className="got-nav">
             <div className="got-nav-logo">
               Shlok Jadhav
-              <span className="got-nav-role">Software Developer</span>
+              <span className="got-nav-role">Software Engineer</span>
             </div>
             <ul className="got-nav-links">
               <li><a href="https://github.com/mr-shlok" target="_blank" rel="noopener noreferrer">GitHub</a></li>
