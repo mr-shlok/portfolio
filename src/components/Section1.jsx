@@ -378,17 +378,10 @@ const HackathonCard = ({ hack, index }) => {
 // ─── Main Section1 ───────────────────────────────────────────────────────────
 const Section1 = () => {
   const sectionRef   = useRef(null)
-  const headingRef   = useRef(null)
-  const subRef       = useRef(null)
-
   useEffect(() => {
-    const els = [headingRef.current, subRef.current].filter(Boolean)
     const obs = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          els.forEach((el, i) =>
-            setTimeout(() => el.classList.add('visible'), i * 150)
-          )
           obs.disconnect()
         }
       },
@@ -440,13 +433,13 @@ const Section1 = () => {
       {/* ─── Profile Cards Section (existing) ─── */}
       <div id="profile-section" />
       <header className="section1-header">
-        <p ref={subRef} className="section1-eyebrow fade-up">THE PROFESSIONAL PROFILE</p>
+        <p className="section1-eyebrow fade-up visible">THE PROFESSIONAL PROFILE</p>
         <div className="header-ornament">
           <span className="ornament-line" />
           <span className="ornament-rune">✦</span>
           <span className="ornament-line" />
         </div>
-        <h1 ref={headingRef} className="section1-title fade-up">
+        <h1 className="section1-title fade-up visible">
           Core<br />
           <em>Profile</em>
         </h1>

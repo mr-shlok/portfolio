@@ -288,6 +288,7 @@ const Hero = () => {
             className="got-video"
             src="/video/one.mp4"
             playsInline
+            autoPlay
             muted
             preload="auto"
           />
