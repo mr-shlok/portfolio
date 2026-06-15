@@ -117,6 +117,16 @@ const EXPERIENCES = [
     description: 'Selected through campus recruitment for an intensive training program in Java, SQL, and Web Technologies. Currently enhancing skills as a Java Full Stack Developer. The program covers advanced Java concepts, Spring Boot framework, RESTful API development, frontend technologies (HTML, CSS, JavaScript, React), database management with MySQL, and deployment practices. Focused on building production-ready applications with industry-standard best practices.',
     skills: ['Java Full Stack', 'Spring Boot', 'SQL', 'React', 'REST APIs', 'Web Technologies'],
   },
+  {
+    id: 'finwizz',
+    role: 'Client Relations Associate',
+    company: 'Finwizz Financial Services Pvt. Ltd.',
+    period: 'Professional Experience',
+    type: 'Professional Skills',
+    accent: '#5a9e48',
+    description: 'Worked in a customer-facing financial services role to intentionally strengthen professional communication, client interaction, and relationship-building skills. Collaborated with customers and finance professionals to understand requirements, assist with loan consultation processes, and provide end-to-end support throughout customer interactions. Developed strong interpersonal, problem-solving, and teamwork abilities while gaining firsthand experience in a professional business environment and learning how to effectively communicate with diverse stakeholders.',
+    skills: ['Professional Communication', 'Client Relationship Management', 'Customer Interaction', 'Problem Solving', 'Team Collaboration', 'Stakeholder Management'],
+  },
 ]
 
 // ─── Hackathon / Project data ────────────────────────────────────────────────

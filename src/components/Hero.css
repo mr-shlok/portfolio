@@ -205,32 +205,6 @@ body {
   color: var(--gold-light);
 }
 
-/* ── Decorative divider ── */
-.got-divider {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin-bottom: 14px;
-}
-
-.got-divider-line {
-  flex: 1;
-  max-width: 60px;
-  height: 1px;
-  background: linear-gradient(to right, transparent, var(--gold-dim));
-}
-
-.got-divider-line.right {
-  background: linear-gradient(to left, transparent, var(--gold-dim));
-}
-
-.got-divider-diamond {
-  width: 6px;
-  height: 6px;
-  background: var(--gold);
-  transform: rotate(45deg);
-}
-
 /* ── Content area ── */
 .got-content {
   position: absolute;
@@ -242,20 +216,22 @@ body {
   max-width: 720px;
 }
 
-.got-sigil {
-  font-size: 28px;
-  margin-bottom: 16px;
+.got-eyebrow {
+  font-family: 'Cinzel', serif;
+  font-size: 10px;
+  letter-spacing: 0.35em;
+  color: var(--gold-light);
+  text-transform: uppercase;
+  margin-bottom: 8px;
   display: block;
-  filter: drop-shadow(0 0 12px rgba(201, 168, 76, 0.6));
-  color: var(--gold);
 }
 
 .got-subtitle {
   font-family: 'Cinzel', serif;
-  font-size: clamp(12px, 1.5vw, 15px);
-  font-weight: 700;
-  text-shadow: 0 0 12px rgba(201, 168, 76, 0.5);
-  letter-spacing: 0.45em;
+  font-size: clamp(13px, 1.6vw, 16px);
+  font-weight: 500;
+  text-shadow: 0 0 10px rgba(201, 168, 76, 0.4);
+  letter-spacing: 0.25em;
   color: var(--gold);
   text-transform: uppercase;
   margin-bottom: 16px;
@@ -281,6 +257,35 @@ body {
   max-width: 480px;
   font-style: italic;
   text-shadow: 0 1px 8px rgba(0, 0, 0, 0.8);
+  margin-bottom: 24px;
+}
+
+/* ── Stats Grid ── */
+.got-stats-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 16px;
+  margin-bottom: 24px;
+  max-width: 460px;
+}
+
+.got-stat-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.stat-icon {
+  font-size: 20px;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));
+}
+
+.stat-text {
+  font-family: 'Inter', sans-serif; /* fallback to sans-serif */
+  font-size: 11px;
+  color: var(--ash);
+  line-height: 1.4;
+  letter-spacing: 0.02em;
 }
 
 /* ── CTA buttons ── */
@@ -591,11 +596,25 @@ body {
   .got-corner         { display: none; }
   .got-title          { font-size: clamp(22px, 5.5vw, 28px); margin-bottom: 12px; }
   .got-body           { font-size: 13px; line-height: 1.6; max-width: 100%; }
-  .got-cta-row        { margin-top: 20px; gap: 12px; flex-wrap: wrap; }
+  .got-cta-row { margin-top: 20px; gap: 12px; flex-wrap: wrap; }
   .got-cta-btn, .got-cta-ghost { 
     padding: 10px 18px; 
     font-size: 8px; 
     letter-spacing: 0.2em; 
+  }
+  .got-stats-grid {
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    gap: 12px;
+    margin-bottom: 16px;
+  }
+  .got-stat-item {
+    gap: 8px;
+  }
+  .stat-icon {
+    font-size: 16px;
+  }
+  .stat-text {
+    font-size: 10px;
   }
   .got-tech-tags      { margin-bottom: 12px; gap: 6px; }
   .tech-tag           { padding: 3px 8px; font-size: 8px; }

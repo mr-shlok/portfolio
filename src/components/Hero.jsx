@@ -10,92 +10,103 @@ const CHAPTERS = [
   {
     id: 'intro',
     progress: [0, 0.12],
-    title: 'Shlok Jadhav',
+    eyebrow: 'HELLO, I\'M',
+    title: 'SHLOK JADHAV',
     subtitle: 'JAVA FULL STACK DEVELOPER',
-    body: (
-      <>
-        <span className="highlight">Java Full Stack Developer</span> | <span className="highlight">Problem Solver</span> | Tech Enthusiast. Building <span className="highlight">scalable, secure, and innovative</span> web applications with modern technologies.
-      </>
-    ),
+    body: 'Building scalable, secure, and innovative web applications with modern technologies.',
     sigil: '✦',
-    tech: ['Java', 'SQL', 'Web Development', 'Spring Boot'],
-    ctaPrimary: { label: 'Begin the Journey', url: '#experience', external: false },
-    ctaSecondary: { label: 'Explore Profile', url: '#profile-section', external: false },
+    tech: ['JAVA', 'SPRING BOOT', 'SQL', 'REACT'],
+    stats: [
+      { icon: '💼', text: '2+\nMajor Projects' },
+      { icon: '🐙', text: 'Open Source\nContributor' },
+      { icon: '💻', text: '500+\nDSA Problems Solved' },
+      { icon: '🛡️', text: '100%\nPassion' },
+    ],
+    ctaPrimary: { label: 'EXPLORE PROJECTS →', url: '#projects', external: false },
+    ctaSecondary: { label: 'CONTACT ME ✉', url: 'mailto:jshlok11111@gmail.com', external: false },
   },
   {
     id: 'about',
     progress: [0.12, 0.30],
-    title: 'About Me',
-    subtitle: 'THE PORTFOLIO STORY',
-    body: (
-      <>
-        A motivated <span className="highlight">Information Technology</span> student pursuing BE (IT) from <span className="highlight">Theem College of Engineering</span> (2022–2026). Passionate about <span className="highlight">Java Full Stack Development</span>, problem-solving, and real-world project building.
-      </>
-    ),
+    eyebrow: 'PORTFOLIO STORY',
+    title: 'ABOUT ME',
+    subtitle: 'SOFTWARE ENGINEERING STUDENT',
+    body: 'A motivated Information Technology student pursuing BE (IT) from Theem College of Engineering. Passionate about problem-solving and real-world project building.',
     sigil: '🎓',
-    tech: ['Full Stack Development', 'Problem Solving', 'Software Engineering'],
-    ctaPrimary: { label: 'View Skills', url: '#profile-section', external: false },
-    ctaSecondary: { label: 'Contact Me', url: 'mailto:jshlok11111@gmail.com', external: false },
-  },
-  {
-    id: 'pharmatrace',
-    progress: [0.30, 0.52],
-    title: 'PharmaTrace',
-    subtitle: 'BLOCKCHAIN SUPPLY CHAIN',
-    body: (
-      <>
-        <span className="highlight">Blockchain-based</span> pharmaceutical supply chain tracking system to prevent counterfeit drugs using <span className="highlight">tamper-proof records</span>.
-      </>
-    ),
-    sigil: '📦',
-    tech: ['Blockchain', 'Ethereum', 'Smart Contracts', 'Web3'],
-    ctaPrimary: { label: 'View Code (GitHub)', url: 'https://github.com/patildhrup/PharmaTrace', external: true },
-    ctaSecondary: { label: 'Explore Profile', url: '#profile-section', external: false },
+    tech: ['FULL STACK', 'PROBLEM SOLVING', 'SOFTWARE DEV'],
+    stats: [
+      { icon: '📚', text: 'IT Engineering\n2022–2026' },
+      { icon: '🎓', text: 'Theem College\nOf Engineering' },
+      { icon: '💡', text: 'Continuous\nLearner' },
+    ],
+    ctaPrimary: { label: 'VIEW SKILLS →', url: '#profile-section', external: false },
+    ctaSecondary: { label: 'RESUME 📄', url: '/Shlok_Jadhav_Resume.pdf', external: true },
   },
   {
     id: 'payshield',
-    progress: [0.52, 0.70],
-    title: 'PayShield',
-    subtitle: 'UPI FRAUD DETECTION',
-    body: (
-      <>
-        <span className="highlight">UPI fraud detection system</span> using anomaly detection and transaction analysis for improving <span className="highlight">payment security</span>.
-      </>
-    ),
+    progress: [0.30, 0.52],
+    eyebrow: 'PROJECT SPOTLIGHT',
+    title: 'PAYSHIELD',
+    subtitle: 'UPI Fraud Detection System',
+    body: 'ML-powered system that detects suspicious UPI transactions using anomaly detection and transaction analysis to improve payment security.',
     sigil: '🛡️',
-    tech: ['Machine Learning', 'Anomaly Detection', 'UPI Payments', 'Python'],
-    ctaPrimary: { label: 'View Code (GitHub)', url: 'https://github.com/mr-shlok/UPI-Shield', external: true },
-    ctaSecondary: { label: 'Explore Profile', url: '#profile-section', external: false },
-  },
-  {
-    id: 'insight-astra',
-    progress: [0.70, 0.87],
-    title: 'Insight Astra',
-    subtitle: 'IIT BOMBAY HACKATHON',
-    body: (
-      <>
-        <span className="highlight">Conversational AI system</span> to query digital payment data using <span className="highlight">natural language</span> and generate real-time insights.
-      </>
-    ),
-    sigil: '✨',
-    tech: ['Conversational AI', 'Natural Language', 'Data Analytics', 'API'],
-    ctaPrimary: { label: 'View Code (GitHub)', url: 'https://github.com/patildhrup/insight-Astra', external: true },
-    ctaSecondary: { label: 'Explore Profile', url: '#profile-section', external: false },
+    tech: ['PYTHON', 'MACHINE LEARNING', 'SQL', 'ANOMALY DETECTION', 'UPI PAYMENTS'],
+    stats: [
+      { icon: '📈', text: 'Detection Accuracy: 92%' },
+      { icon: '🎯', text: 'Reduced False Positives by 30%' },
+      { icon: '⚡', text: 'Real-time Transaction Monitoring' },
+    ],
+    ctaPrimary: { label: 'VIEW CODE (GITHUB) 🐙', url: 'https://github.com/mr-shlok/UPI-Shield', external: true },
+    ctaSecondary: { label: 'LIVE DEMO ↗', url: '#', external: false },
   },
   {
     id: 'greenmiles',
-    progress: [0.87, 1.0],
-    title: 'GreenMiles EV',
-    subtitle: 'INTELLIGENCE PLATFORM',
-    body: (
-      <>
-        <span className="highlight">AI-powered EV platform</span> for route planning, <span className="highlight">battery prediction</span>, charging station discovery, and sustainability tracking.
-      </>
-    ),
+    progress: [0.52, 0.70],
+    eyebrow: 'FEATURED PROJECT',
+    title: 'GREENMILES EV',
+    subtitle: 'AI-Powered EV Intelligence Platform',
+    body: 'Platform for EV route planning, battery prediction, charging station discovery, and sustainability tracking.',
     sigil: '⚡',
-    tech: ['AI Platform', 'Route Planning', 'Battery Prediction', 'EV Stations'],
-    ctaPrimary: { label: 'View Code (GitHub)', url: 'https://github.com/mr-shlok/GreenMiles-EV', external: true },
-    ctaSecondary: { label: 'Explore Profile', url: '#profile-section', external: false },
+    tech: ['JAVA', 'SPRING BOOT', 'REACT', 'AI / ML', 'POSTGRESQL', 'MAP API'],
+    stats: [
+      { icon: '🛣️', text: 'Route Cost Reduced by 18%' },
+      { icon: '🔋', text: 'Battery Prediction Accuracy: 91%' },
+      { icon: '🍃', text: 'Sustainability Score Tracking' },
+    ],
+    ctaPrimary: { label: 'VIEW CODE (GITHUB) 🐙', url: 'https://github.com/mr-shlok/GreenMiles-EV', external: true },
+    ctaSecondary: { label: 'LIVE DEMO ↗', url: '#', external: false },
+  },
+  {
+    id: 'pharmatrace',
+    progress: [0.70, 0.87],
+    eyebrow: 'BLOCKCHAIN PROJECT',
+    title: 'PHARMATRACE',
+    subtitle: 'Blockchain Supply Chain',
+    body: 'Blockchain-based pharmaceutical supply chain tracking system to prevent counterfeit drugs using tamper-proof records.',
+    sigil: '📦',
+    tech: ['BLOCKCHAIN', 'ETHEREUM', 'SMART CONTRACTS', 'WEB3'],
+    stats: [
+      { icon: '🔒', text: 'Tamper-proof Records' },
+      { icon: '🔗', text: 'Decentralized Tracking' },
+    ],
+    ctaPrimary: { label: 'VIEW CODE (GITHUB) 🐙', url: 'https://github.com/patildhrup/PharmaTrace', external: true },
+    ctaSecondary: { label: 'EXPLORE PROFILE →', url: '#profile-section', external: false },
+  },
+  {
+    id: 'insight-astra',
+    progress: [0.87, 1.0],
+    eyebrow: 'HACKATHON BUILD',
+    title: 'INSIGHT ASTRA',
+    subtitle: 'Conversational AI System',
+    body: 'Conversational AI system to query digital payment data using natural language and generate real-time insights.',
+    sigil: '✨',
+    tech: ['CONVERSATIONAL AI', 'NATURAL LANGUAGE', 'DATA ANALYTICS', 'API'],
+    stats: [
+      { icon: '🧠', text: 'NLP Driven Queries' },
+      { icon: '📊', text: 'Real-time Analytics' },
+    ],
+    ctaPrimary: { label: 'VIEW CODE (GITHUB) 🐙', url: 'https://github.com/patildhrup/insight-Astra', external: true },
+    ctaSecondary: { label: 'EXPLORE PROFILE →', url: '#profile-section', external: false },
   },
 ]
 
@@ -110,9 +121,11 @@ const Hero = () => {
   const stickyRef     = useRef(null)
   const videoRef      = useRef(null)
   const overlayRef    = useRef(null)
+  const eyebrowRef    = useRef(null)
   const titleRef      = useRef(null)
   const subtitleRef   = useRef(null)
   const bodyRef       = useRef(null)
+  const statsRef      = useRef(null)
   const sigilRef      = useRef(null)
   const progressRef   = useRef(null)
   const vignetteRef   = useRef(null)
@@ -133,8 +146,8 @@ const Hero = () => {
     const tl = gsap.timeline()
 
     // fade out old text
-    tl.to([titleRef.current, subtitleRef.current, tagsRef.current, bodyRef.current, sigilRef.current, ctaRef.current].filter(Boolean), {
-      y: -24, opacity: 0, duration: 0.35, ease: 'power2.in', stagger: 0.04,
+    tl.to([eyebrowRef.current, titleRef.current, subtitleRef.current, tagsRef.current, bodyRef.current, statsRef.current, ctaRef.current].filter(Boolean), {
+      y: -24, opacity: 0, duration: 0.35, ease: 'power2.in', stagger: 0.03,
     })
     // update DOM mid-fade via callback
     .call(() => {
@@ -142,9 +155,9 @@ const Hero = () => {
     })
     // fade in new text
     .fromTo(
-      [sigilRef.current, subtitleRef.current, titleRef.current, tagsRef.current, bodyRef.current, ctaRef.current].filter(Boolean),
+      [eyebrowRef.current, titleRef.current, subtitleRef.current, tagsRef.current, bodyRef.current, statsRef.current, ctaRef.current].filter(Boolean),
       { y: 32, opacity: 0 },
-      { y: 0, opacity: 1, duration: 0.55, ease: 'power3.out', stagger: 0.07 }
+      { y: 0, opacity: 1, duration: 0.55, ease: 'power3.out', stagger: 0.05 }
     )
 
     // chapter label
@@ -247,9 +260,9 @@ const Hero = () => {
 
     // Entrance animation
     gsap.fromTo(
-      [sigilRef.current, subtitleRef.current, titleRef.current, tagsRef.current, bodyRef.current, ctaRef.current].filter(Boolean),
+      [eyebrowRef.current, titleRef.current, subtitleRef.current, tagsRef.current, bodyRef.current, statsRef.current, ctaRef.current].filter(Boolean),
       { y: 50, opacity: 0 },
-      { y: 0, opacity: 1, duration: 1.1, ease: 'power3.out', stagger: 0.1, delay: 0.3 }
+      { y: 0, opacity: 1, duration: 1.1, ease: 'power3.out', stagger: 0.08, delay: 0.3 }
     )
 
     return () => {
@@ -344,14 +357,11 @@ const Hero = () => {
 
    
           <div className="got-content">
-            <span ref={sigilRef} className="got-sigil">{CHAPTERS[activeChapter].sigil}</span>
-            <div className="got-divider">
-              <div className="got-divider-line" />
-              <div className="got-divider-diamond" />
-              <div className="got-divider-line right" />
-            </div>
-            <span ref={subtitleRef} className="got-subtitle">{CHAPTERS[activeChapter].subtitle}</span>
+            <span ref={eyebrowRef} className="got-eyebrow">{CHAPTERS[activeChapter].eyebrow}</span>
             <h1 ref={titleRef} className="got-title">{CHAPTERS[activeChapter].title}</h1>
+            <span ref={subtitleRef} className="got-subtitle">{CHAPTERS[activeChapter].subtitle}</span>
+            
+            <p ref={bodyRef} className="got-body">{CHAPTERS[activeChapter].body}</p>
             
             <div ref={tagsRef} className="got-tech-tags">
               {CHAPTERS[activeChapter].tech && CHAPTERS[activeChapter].tech.map(t => (
@@ -359,7 +369,16 @@ const Hero = () => {
               ))}
             </div>
 
-            <p ref={bodyRef} className="got-body">{CHAPTERS[activeChapter].body}</p>
+            {CHAPTERS[activeChapter].stats && (
+              <div ref={statsRef} className="got-stats-grid">
+                {CHAPTERS[activeChapter].stats.map((stat, i) => (
+                  <div key={i} className="got-stat-item">
+                    <span className="stat-icon">{stat.icon}</span>
+                    <span className="stat-text">{stat.text.split('\n').map((line, j) => <React.Fragment key={j}>{line}<br/></React.Fragment>)}</span>
+                  </div>
+                ))}
+              </div>
+            )}
             
             <div ref={ctaRef} className="got-cta-row">
               {CHAPTERS[activeChapter].ctaPrimary && (
