@@ -62,7 +62,7 @@ body {
 
 @media (max-width: 768px) {
   .got-video {
-    object-position: 65% center;
+    object-position: 90% center;
   }
 }
 
@@ -583,7 +583,7 @@ body {
 @media (max-width: 768px) {
   .got-content        { 
     padding: 0 20px 48px; 
-    max-width: calc(100% - 60px); 
+    max-width: 80%; 
     bottom: 24px;
   }
   .got-nav            { padding: 16px 20px; }
@@ -594,12 +594,12 @@ body {
   .got-scroll-hint    { display: none; }
   .got-rune-bar       { left: 20px; right: 20px; top: 72px; }
   .got-corner         { display: none; }
-  .got-title          { font-size: clamp(22px, 5.5vw, 28px); margin-bottom: 12px; }
-  .got-body           { font-size: 13px; line-height: 1.6; max-width: 100%; }
+  .got-title          { font-size: clamp(28px, 8vw, 36px); margin-bottom: 12px; }
+  .got-body           { font-size: 15px; line-height: 1.6; max-width: 100%; margin-bottom: 16px; }
   .got-cta-row { margin-top: 20px; gap: 12px; flex-wrap: wrap; }
   .got-cta-btn, .got-cta-ghost { 
-    padding: 10px 18px; 
-    font-size: 8px; 
+    padding: 12px 20px; 
+    font-size: 10px; 
     letter-spacing: 0.2em; 
   }
   .got-stats-grid {
@@ -611,25 +611,26 @@ body {
     gap: 8px;
   }
   .stat-icon {
-    font-size: 16px;
+    font-size: 20px;
   }
   .stat-text {
-    font-size: 10px;
+    font-size: 12px;
   }
   .got-tech-tags      { margin-bottom: 12px; gap: 6px; }
-  .tech-tag           { padding: 3px 8px; font-size: 8px; }
+  .tech-tag           { padding: 5px 10px; font-size: 10px; }
   .got-sigil          { font-size: 20px; margin-bottom: 8px; }
+  .got-eyebrow        { font-size: 11px; margin-bottom: 6px; }
   .got-divider        { margin-bottom: 10px; }
-  .got-subtitle       { margin-bottom: 8px; }
-  .got-nav-logo       { font-size: 16px; }
-  .got-nav-role       { font-size: 9px; }
+  .got-subtitle       { font-size: 14px; margin-bottom: 8px; }
+  .got-nav-logo       { font-size: 18px; }
+  .got-nav-role       { font-size: 10px; }
 }
 
 @media (max-width: 480px) {
-  .got-content        { padding: 0 16px 36px; max-width: calc(100% - 40px); }
+  .got-content        { padding: 0 16px 36px; max-width: 85%; }
   .got-nav            { padding: 12px 16px; }
-  .got-title          { font-size: clamp(18px, 5vw, 24px); }
-  .got-body           { font-size: 12px; }
+  .got-title          { font-size: clamp(24px, 7.5vw, 30px); }
+  .got-body           { font-size: 14px; }
   .got-cta-row        { flex-direction: column; gap: 8px; align-items: flex-start; }
   .got-right-panel    { right: 8px; }
   .got-dot            { width: 4px; height: 4px; }
